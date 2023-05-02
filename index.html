@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/1be9a40ed8.js" crossorigin="anonymous"></script>
+		<title>????</title>
+		
+	</head>
+<body>
+	<div id="hdr">
+		<div class="cntnr">
+			<nav>
+				<img src="images/MICHAEL.png" class="mchl">
+					<ul>
+						<li><a href="#hdr">Home</a></li>
+						<li><a href="#abt">About</a></li>
+						<li><a href="#srvcs">My Services</a></li>
+						<li><a href="file:Sophos.html">Sophos</a></li>
+						<li><a href="#cntct">Contact</a></li>
+					</ul>
+			</nav>
+			
+			<div class="hdr_txt">
+				<p>IT Student</p>				
+					<h1> Hello, Im <span>M</span>ichael <br>Joshua M. Regodon </h1>
+					
+			</div>
+		</div>
+	</div>
+	<!--about-->
+	<div id="abt">
+		<div class="cntnr">
+			<div class="rows">
+				<div class="abt_clmn_1">
+					<img src="images/MJMR.jpg" >
+				</div>
+				<div class="abt_clmn_2">
+					<h1 class = "abth1">About Me</h1>
+					<p>I am a keen, hard working, reliable and excellent time keeper. I am a bright and receptive person, able to communicate well with people at all levels. I am good at working using my own initiative and I am flexible in my approach to work duties. I have a good sense of humour and a pleasant approach.
+					</p>
+					<div class="titles">
+						<p class ="tabs skill" onclick="openclick('skills')">Skills</p>
+						<p class ="tabs"onclick="openclick('experience')">Experience</p>
+						<p class ="tabs"onclick="openclick('education')">Education</p>
+					</div>
+					<div class="tab_cntnts clicked" id="skills">
+					<ul>
+						<li><span>Web Development</span><br>asasa</li>
+						<li><span>Android App Development</span><br>asasa</li>
+					</ul>
+					</div>
+					<div class="tab_cntnts"id="experience">
+						<ul>
+							<li>N/A</li>
+						</ul>
+					</div>
+					<div class="tab_cntnts" id="education">
+						<ul>
+							<li><span>2005-2012</span> <br>Southville 1 Elementary School</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---Services-->
+	<div id="srvcs">
+		<div class="cntnr">
+			<h1 class = "abth1">My Services</h1>
+			<div class="srvcs_list">
+				<div>
+					<i class="fa-solid fa-globe"></i>
+					<h2>Web Development</h2>
+					<p>asdkj ahdkja shdkja zxdha sjkdhasjkdha skjdhaskd asdhasjkdhasjkdhasjkdh asdjka asda</p>
+					
+				</div>
+				<div>
+					<i class="fa-solid fa-mobile-screen-button"></i>
+					<h2>App Development</h2>
+					<p>asdkj ahdkja shdkja zxdha sjkdhasjkdha skjdhaskd asdhasjkdhasjkdhasjkdh asdjka asda</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---Contact-->
+<div id="cntct">
+  <div class="cntnr">
+    <div class="rows">
+      <div class="cntct_left">
+        <h1 class="abth1">Contact Me</h1>
+        <p><i class="fa-solid fa-phone"></i>09696969696969</p>
+        <div class="social_plat">
+          <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https:/google.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://google.com"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="cntct_right">
+        <form>
+          <input type="text" name="Name" placeholder="Input your name..." required>
+          <input type="email" name="email" placeholder="Input your email..." required>
+          <textarea name="Message"  rows="6" placeholder="Input your message.."></textarea>
+          <button type="submit" class="btns">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+	/* js for tabs*/
+	var tabs = document.getElementsByClassName("tabs")
+	var tab_contents = document.getElementsByClassName("tab_cntnts")
+	/*click list*/
+	function openclick (tabname){
+		for(tab of tabs){
+			tab.classList.remove("skill");
+		}
+		for(tab_content of tab_contents){
+			tab_content.classList.remove("clicked");
+		}
+		event.currentTarget.classList.add("skill");
+		document.getElementById(tabname).classList.add("clicked")
+	}	
+</script>
+
+
+
+</body>
+</html>

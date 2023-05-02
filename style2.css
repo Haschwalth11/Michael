@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	  font-family: 'Poppins', sans-serif;
+	  box-sizing: border-box;
+  }
+.cntnr {
+    padding: 10px 10% ;
+
+}
+.hdr_txt {
+    margin-top: 20%;
+    font-size: 30px;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px ;
+    font-weight: bold;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+#sophos .hdr_txt p {
+	font-size: 18px ;
+	text-align: left;
+}
+#sophos .hdr_txt h1 {
+	font-size: 30px;
+}
+#sophos  img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}

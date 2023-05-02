@@ -1,0 +1,278 @@
+*{
+	margin: 0;
+	padding: 0;
+	  font-family: 'Poppins', sans-serif;
+	  box-sizing: border-box;
+  }
+  body{
+	  background-color: black;
+	  color: white	;
+	  
+  }
+  #hdr {
+	  width: 100%;
+	  height:  100vh;
+	  background-size:cover;
+  }
+  html {
+	scroll-behavior: smooth;
+  }
+  .cntnr {
+	  padding: 10px 10% ;
+  
+  }
+  nav{
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
+  }
+  .mchl {
+	  width: 140px
+	  
+  }
+  nav ul li {
+	  display: inline-block;
+	  list-style: none;
+	  margin: 10px 20px ;
+	  font-weight: bold;
+  }
+  nav ul li a {
+	  color: white;
+	  text-decoration: none;
+	  font-size: 17px;
+	  position: relative;
+  }
+  nav ul li a::after{
+	  content: '';
+	  width: 0%;
+	  height: 3px;
+	  background-color: red;
+	  position: absolute;
+	  left: 0;
+	  bottom: -6px;
+	  transition: .3s;
+  }
+  nav ul li a:hover::after{
+	  width: 100%;
+  }
+  .hdr_txt {
+	  margin-top: 20%;
+	  font-size: 30px;
+  }
+  
+  .hdr_txt h1 {
+	  font-size: 60px;
+	  margin-top: 20px;
+	  margin-bottom: 10px;
+  }
+  .hdr_txt h1 span {
+	  color: red;
+	  text-shadow: 3px 1px 1px rgb(68, 0, 0);
+  }
+  /************about***********/
+  #abt {
+	  
+	  padding: 80px 0;
+	  color: gray;
+  }
+  .rows {
+	  display: flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
+  }
+  .abt_clmn_1 {
+	  flex-basis: 35%;
+  }
+  .abt_clmn_1 img{
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 15px;
+  }
+  .abt_clmn_2 {
+	  flex-basis: 60%;
+  }
+  .abth1 {
+	  font-size: 60px;
+	  font-weight: 600;
+	  color: white;
+  }
+  .titles {
+	  display: flex;
+	  margin: 20px 0 40px;
+  }
+  .tabs {
+	  margin-right: 50px;
+	  font-size: 18px;
+	  font-weight: 600;
+	  cursor: pointer;
+	  position: relative;
+  }
+  .tabs::after{
+	  content: "";
+	  width: 0;
+	  height: 3px;
+	  background: red;
+	  position: absolute;
+	  left: 0;
+	  bottom: -9px;
+	  transition: 0.3s;
+  }
+  .tabs.skill::after{
+	   width: 50%;
+  }
+  .tab_cntnts ul li {
+	  list-style: none;
+	  margin: 10px;
+	  font-size: 14px;
+  }
+  .tab_cntnts ul li span {
+	  color: rgb(255, 0, 0);
+	  font-size: 14px;
+  }
+  .tab_cntnts{
+	  display: none;
+  }
+  .tab_cntnts.clicked {
+	  display: block;
+  }
+  /*******Services******/
+  #srvcs {
+	  padding: 30px 0;
+  }
+  .srvcs_list {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	  grid-gap: 40px;
+	  margin-top: 50px;
+  }
+  .srvcs_list div {
+	  background: rgb(46, 46, 46);
+	  padding: 40px;
+	  font-size: 13px;
+	  font-weight: 400;
+	  border-radius: 10px ;
+  }
+  .srvcs_list div i {
+	  font-size: 50px;
+	  margin-bottom: 30px;
+	  transition: background 0.3s, transform .5s;
+  }
+  .srvcs_list div h2 {
+	  font-size: 30px;
+	  font-weight: 500;
+	  margin-bottom: 15px;
+  }
+  .srvcs_list div a {
+	  text-decoration: none;
+	  color: white;
+	  font-size: 12px;
+	  margin-top: 20px;
+	  display: inline-block;
+  }
+  .srvcs_list div:hover {
+	  background: rgb(80, 37, 37);
+	  transform: translate(-10px);
+  }
+ /*contact*/
+#cntct{
+  background-color:black;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#cntct .cntnr{
+  max-width: 1200px;
+  margin: auto;
+}
+
+#cntct h1{
+  font-size: 40px;
+}
+
+#cntct p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#cntct .social_plat a{
+  margin: 0 10px;
+  color: white;
+  font-size: 30px;
+}
+
+#cntct .social_plat a:hover{
+  color: #1E90FF;
+  transition: 0.5s ease;
+}
+.fa-facebook:hover{
+  transform: translateY(-5px);
+}
+.fa-twitter:hover{
+	transform: translateY(-5px);
+}
+.fa-instagram:hover {
+	color:pink;
+	transform: translateY(-5px);
+  }
+
+#cntct .rows{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cntct .cntct_left{
+  flex-basis: 50%;
+}
+
+#cntct .cntct_right{
+  flex-basis: 40%;
+}
+
+#cntct form input, 
+#cntct form textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+#cntct form textarea{
+  resize: none;
+  height: 150px;
+}
+
+#cntct form .btns{
+  background-color: #920000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cntct form .btns:hover{
+  background-color: #300000;
+  transition: 0.5s ease;
+}
+
+/**SOPHOS**/
+#sophos .hdr_txt p {
+	font-size: 18px ;
+	text-align: left;
+}
+#sophos .hdr_txt h1 {
+	font-size: 30px;
+}
+#sophos .w_i_sophos img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
